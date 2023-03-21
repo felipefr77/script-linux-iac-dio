@@ -17,17 +17,17 @@ groupadd GRP_SEC
 
 
 #Criando os usuários e vinculando aos seus respectivos grupos
-useradd carlos -c "Carlos dos Testes" -m -s /bin/bash -p $(openssl passwd -crypt 123456) -g GRP_ADM
-useradd maria -c "Maria dos Testes" -m -s /bin/bash -p $(openssl passwd -crypt 123456) -g GRP_ADM
-useradd joao -c "João dos Testes" -m -s /bin/bash -p $(openssl passwd -crypt 123456) -g GRP_ADM
+useradd carlos -c "Carlos dos Testes" -m -s /bin/bash -p $(openssl passwd 123456) -G GRP_ADM
+useradd maria -c "Maria dos Testes" -m -s /bin/bash -p $(openssl passwd 123456) -G GRP_ADM
+useradd joao -c "João dos Testes" -m -s /bin/bash -p $(openssl passwd 123456) -G GRP_ADM
 
-useradd debora -c "Débora dos Testes" -m -s /bin/bash -p $(openssl passwd -crypt 123456) -g GRP_VEN
-useradd sebastiana -c "Sebastiana dos Testes" -m -s /bin/bash -p $(openssl passwd -crypt 123456) -g GRP_VEN
-useradd roberto -c "Roberto dos Testes" -m -s /bin/bash -p $(openssl passwd -crypt 123456) -g GRP_VEN
+useradd debora -c "Débora dos Testes" -m -s /bin/bash -p $(openssl passwd 123456) -G GRP_VEN
+useradd sebastiana -c "Sebastiana dos Testes" -m -s /bin/bash -p $(openssl passwd 123456) -G GRP_VEN
+useradd roberto -c "Roberto dos Testes" -m -s /bin/bash -p $(openssl passwd 123456) -G GRP_VEN
 
-useradd josefina -c "Josefina dos Testes" -m -s /bin/bash -p $(openssl passwd -crypt 123456) -g GRP_SEC
-useradd amanda -c "Amanda dos Testes" -m -s /bin/bash -p $(openssl passwd -crypt 123456) -g GRP_SEC
-useradd rogerio -c "Rogério dos Testes" -m -s /bin/bash -p $(openssl passwd -crypt 123456) -g GRP_SEC
+useradd josefina -c "Josefina dos Testes" -m -s /bin/bash -p $(openssl passwd 123456) -G GRP_SEC
+useradd amanda -c "Amanda dos Testes" -m -s /bin/bash -p $(openssl passwd 123456) -G GRP_SEC
+useradd rogerio -c "Rogério dos Testes" -m -s /bin/bash -p $(openssl passwd 123456) -G GRP_SEC
 
 
 #Alterando permissões diretório
